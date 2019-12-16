@@ -1,6 +1,7 @@
 # han-uni-axios
 
-![https://img.shields.io/badge/npm-%E7%89%88%E6%9C%ACv0.2.1-brightgreen](https://img.shields.io/badge/npm-版本v0.2.1-brightgreen)![https://img.shields.io/badge/install%20size-20KB-yellowgreen](https://img.shields.io/badge/install size-20KB-yellowgreen)
+![https://img.shields.io/badge/npm-%E7%89%88%E6%9C%ACv0.2.1-brightgreen](https://img.shields.io/badge/npm-版本v0.2.1-brightgreen)
+![https://img.shields.io/badge/install%20size-20KB-yellowgreen](https://img.shields.io/badge/install size-20KB-yellowgreen)
 
 
 
@@ -68,7 +69,7 @@ let http=uniAxios.create({
 })
 http({
 	url:'',
-  method:'',
+        method:'',
 	data:{}
 })
 ```
