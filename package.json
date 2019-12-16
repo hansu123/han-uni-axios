@@ -1,0 +1,11 @@
+{
+  "name": "han-uni-axios",
+  "version": "0.0.11",
+  "description": "a request is adapted from axios in uni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
