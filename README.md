@@ -1,8 +1,6 @@
 # han-uni-axios
 
-![https://img.shields.io/badge/npm-%E7%89%88%E6%9C%ACv0.2.1-brightgreen](https://img.shields.io/badge/npm-版本v0.2.1-brightgreen)
-
-
+![https://img.shields.io/badge/npm-%E7%89%88%E6%9C%AC0.2.4-brightgreen](https://img.shields.io/badge/npm-版本0.2.4-brightgreen)
 
 ## 简介
 
@@ -36,7 +34,7 @@ $ npm/cnpm install han-uni-axios -S
 
 ## 使用
 
-### 1. 调用方式
+### 1. 直接使用实例调用
 
 #### Example1:
 
@@ -59,7 +57,10 @@ uniAxios.get({
 })
 ```
 
-#### Example3
+
+### 2. 利用实例中的create创建的方法调用
+
+#### Example1
 
 ```js
 import uniAxios from 'han-uni-axios'
@@ -74,8 +75,7 @@ http({
 ```
 
 
-
-### 2. 请求拦截和响应拦截
+### 3. 请求拦截和响应拦截
 
 ```js
 import uniAxios from 'han-uni-axios'
@@ -85,18 +85,56 @@ let http=uniAxios.create({
 
 //请求拦截
 http.interceptors.request.use(config => {
-  return Promise.resolve(config)
+  return config
 }, error => {
-  return Promise.reject(error)
+  return error
 })
 
 // 响应拦截
 http.interceptors.response.use(res => {
-  return Promise.resolve(res.data)
+  return res
 }, error => {
-  return Promise.reject(error)
+  return error
 })
 ```
 
+### 4. defaults配置
 
+* transformRequestData 
+
+> 转换请求的数据
+
+* transformResponseData
+
+> 转换请求的数据
+
+* header
+
+> 修改请求头
+
+* catchErr
+
+> 返回数据的状态码验证器
+
+以上是自带的四个默认配置项
+
+
+
+#### 4.1 使用实例调用
+
+```js
+import uniAxios from 'han-uni-axios'
+uniAxios.defaults.header=xx //修改默认配置
+uniAxios.defaults.baseURL='' //新值默认配置
+```
+
+#### 4.2 使用实例中的create创建的方法调用
+
+```js
+import uniAxios from 'han-uni-axios'
+let http=uniAxios.create({
+  header=xx, //修改默认配置
+	baseURL:'xx'//新值默认配置
+})
+```
 
