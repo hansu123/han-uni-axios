@@ -1,6 +1,6 @@
 # han-uni-axios
 
-![https://img.shields.io/badge/npm-%E7%89%88%E6%9C%AC0.2.4-brightgreen](https://img.shields.io/badge/npm-版本0.2.4-brightgreen)
+
 
 ## 简介
 
@@ -117,8 +117,6 @@ http.interceptors.response.use(res => {
 > 返回数据的状态码验证器
 
 以上是自带的四个默认配置项
-
-
 
 #### 4.1 使用实例调用
 
