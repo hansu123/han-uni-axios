@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/hansu123/han-uni-axios/compare/v0.2.5...v0.2.6) (2019-12-22)
+
+
+### Bug Fixes
+
+* 修复原型方法get多参数的请求方式 ([c10b754](https://github.com/hansu123/han-uni-axios/commit/c10b7546bdfc6567b6a91ce333a9f01c5a424136))
+
 ### [0.2.2](https://github.com/hansu123/han-uni-axios/compare/v0.2.1...v0.2.2) (2019-12-16)
 
 
